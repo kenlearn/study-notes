@@ -29,7 +29,7 @@ val wordCounts = textFile.flatMap(line => line.split(" ")).groupByKey(x => x.toL
 
 ```
 
-### Predef identity
+### Usage of identity
 ```scala
 def sqif(test: Boolean) = List(1,2,3,4,5).map(
     if (test) x => x*x else identity _)
