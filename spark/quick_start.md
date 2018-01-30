@@ -1,5 +1,5 @@
 # Spark Quick Start
-
+- [Spark 2.2.1](https://spark.apache.org/docs/latest/quick-start.html)
 
 ### start spark-shell
 ```bash
@@ -8,7 +8,7 @@ spark-shell --master local[2]
 - ```--master``` specify master URL
 - ```local[N]``` run locally with N thread
 
-
+### test on spark shell console
 ```scala
 val textFile = spark.read.textFile("opt/spark/README.md")
 
@@ -28,3 +28,6 @@ val wordCounts = textFile.flatMap(line => line.split(" ")).groupByKey(identity).
 val wordCounts = textFile.flatMap(line => line.split(" ")).groupByKey(x => x.toLowerCase).count()
 
 ```
+
+### build a simple app and submit to spark
+[self contained application](https://spark.apache.org/docs/latest/quick-start.html#self-contained-applications)
