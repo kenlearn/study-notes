@@ -63,7 +63,7 @@ libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.2.1"
 ## shell
 sbt package
 spark-submit \
---class SimpleApp \
---master local[2] \
-target/scala-2.11/simple-app_2.11-1.0.jar
+  --class SimpleApp \
+  --master local[2] \
+  target/scala-2.11/simple-app_2.11-1.0.jar
 ```
