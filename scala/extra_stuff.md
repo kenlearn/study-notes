@@ -1,5 +1,16 @@
 # Extra Stuff
 
+### string split, filter, group, count
+```scala
+val s = "  Some  interesting  stuff to do, hello   "
+
+val x = s.toLowerCase()
+    .replaceAll("[^\\w]", " ")
+    .split(" ")
+    .filter(w => w.trim.length >=1)
+    .groupBy(identity)
+    .mapValues(_.size)
+```
 
 ### Usage of identity
 ```scala
