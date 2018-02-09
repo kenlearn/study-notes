@@ -21,6 +21,9 @@ libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.2.1"
 ./src/main/scala
 ./src/main/scala/SimpleApp.scala
 ```
+```bash
+mkdir -p src/main/scala
+```
 
 ## Using giter8 seed
 
